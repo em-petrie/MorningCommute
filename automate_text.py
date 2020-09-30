@@ -31,9 +31,14 @@ sched.every().tuesday.at("8:24").do(send_prompt, train)
 # check bus timetable for tuesdays
 sched.every().tuesday.at("8:22").do(send_prompt, bus)
 
+# add friday schedule here
+
+# test weekends here
+
 # do test 
 sched.every().day.at().do(send_prompt, train)
 
+# update 
 while True:
     sched.run_pending()
     time.sleep(2)
