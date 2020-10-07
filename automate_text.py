@@ -32,10 +32,16 @@ sched.every().tuesday.at("8:24").do(send_prompt, train)
 sched.every().tuesday.at("8:22").do(send_prompt, bus)
 
 # add friday schedule here
+sched.every().friday.at("08:00").do(send_prompt, srnumber)
+sched.every().friday.at("08:02").do(send_prompt, train)
+sched.every().friday.at("08:04").do(send_prompt, bus)
 
 # test weekends here
+sched.every().saturday.at("08:00").do(send_prompt, srnumber)
+sched.every().sunday.at("14:00").do(send_prompt, train)
 
-# do test 
+
+# twilio test
 sched.every().day.at().do(send_prompt, train)
 
 # update 
